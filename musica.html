@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Música Ambiental</title>
+  <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="minilogo">
+      <a href="index.html">
+        <img src="assets/img/StudyZen_Minilogo.png" alt="SZ" class="bar-logo"/>
+      </a>
+    </div>
+    <nav class="buttons">
+      <a href="metodos.html"><button>Métodos</button></a>
+      <a href="calendario.html"><button>Calendario</button></a>
+      <a href="musica.html"><button>Música</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Música Ambiental</h1>
+
+    <section class="lista-musica">
+      <h2>Lista de canciones</h2>
+      <ul id="lista-canciones" class="song-list">
+        <!-- Las canciones se agregarán dinámicamente aquí -->
+      </ul>
+    </section>
+
+    <div class="player-fixed">
+      <div class="player-container">
+        <h2 id="titulo-cancion">Música Ambiental</h2>
+
+        <div class="controls">
+          <button id="anterior">⏮</button>
+          <button id="pausar">⏯</button>
+          <button id="siguiente">⏭</button>
+        </div>
+
+        <div class="progress-container" id="barraProgreso">
+          <div class="progress" id="progreso"></div>
+        </div>
+
+        <audio id="reproductor">
+          <source id="audio-source" />
+        </audio>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/scripts/script.js"></script>
+</body>
+</html>
